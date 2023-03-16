@@ -1,5 +1,10 @@
 package com.fdu.dp;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Scanner;
+
 /**
  * Description  TODO
  * Author hao
@@ -24,15 +29,47 @@ public class Dp_2014_4 {
      3:B->C
      *
      **/
-    public static void main(String[] args) {
+    //key-value 第n次移动:移动记录     1:A->B
+    private static List<String> list = new ArrayList<>();
 
+    private static int moveCount = 0;
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("开始接收控制台输入");
+        int n = scanner.nextInt();
+        processDp(n,'A','B','C');
+        if(list.size()<=100){
+            list.forEach(System.out::println);
+        }else {
+            //否则输出后一百次
+            for (int i = list.size()-100; i <list.size() ; i++) {
+                System.out.println(list.get(i));
+            }
+        }
     }
     /*
      * @Description //TODO 基于分治和递归解决
-     * @Date 22:36 2023/3/15
+     * @Date 10:49 2023/3/16
+     * @param n 总盘数
+     * @param a 一号柱子
+     * @param b
+     * @param c
+
      **/
-    public static void processDp(int n){
-
-
+    private static void processDp(int n, char a,char b,char c){
+        //只剩最后一个盘子
+        if(n==1){
+            //将盘子从出发点A，移动到目的地C
+            list.add(++moveCount+":"+a+"->"+c);
+            return;
+        }
+        //将上面的n-1个盘子从A移动到B
+        processDp(n-1,a,c,b);
+        //将最下面的盘子从A移动到c
+        list.add(++moveCount+":"+a+"->"+c);
+        //将剩下的n-1个盘子从B移动到C
+        //而后重新开始 n-1个盘子从A移动到C的过程
+        processDp(n-1,b,a,c);
     }
 }
