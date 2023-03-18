@@ -1,4 +1,4 @@
-package util;
+package com.course.util;
 
 public class DataUtil {
     public static void swap(int[] arr,int i,int j){

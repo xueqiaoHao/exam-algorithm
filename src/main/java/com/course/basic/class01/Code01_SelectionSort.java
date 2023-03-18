@@ -1,6 +1,7 @@
-package basic.class01;
+package com.course.basic.class01;
 
-import util.DataUtil;
+
+import com.course.util.DataUtil;
 
 public class Code01_SelectionSort {
     public static void main(String[] args) {

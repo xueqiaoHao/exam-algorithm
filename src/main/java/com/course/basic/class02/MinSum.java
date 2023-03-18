@@ -1,4 +1,4 @@
-package basic.class02;
+package com.course.basic.class02;
 
 public class MinSum {
     public static void main(String[] args) {

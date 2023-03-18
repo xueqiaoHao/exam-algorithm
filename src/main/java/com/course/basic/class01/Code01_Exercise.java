@@ -1,4 +1,4 @@
-package basic.class01;
+package com.course.basic.class01;
 /*
 * 第一堂课课上练习题
 * */

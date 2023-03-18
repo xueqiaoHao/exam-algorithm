@@ -1,6 +1,5 @@
-package basic.class02;
+package com.course.basic.class02;
 
-import util.DataUtil;
 
 public class MergeSort {
     public static void main(String[] args) {

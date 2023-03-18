@@ -1,4 +1,4 @@
-package com.fdu.dp;
+package fdu.dp;
 
 import java.util.Scanner;
 

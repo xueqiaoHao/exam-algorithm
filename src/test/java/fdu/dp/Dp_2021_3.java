@@ -1,4 +1,4 @@
-package com.fdu.dp;
+package fdu.dp;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -43,7 +43,7 @@ public class Dp_2021_3 {
      * @param nums
      * @return int
      **/
-    public static int process(int E,int[] nums){
+    private static int process(int E, int[] nums){
         //先对nums数组求和，求出总值
         int sum=0;
         for (int num:nums

@@ -1,6 +1,4 @@
-package com.fdu.dp;
-
-import com.sun.org.apache.xerces.internal.impl.xs.SchemaNamespaceSupport;
+package fdu.dp;
 
 import java.util.Scanner;
 

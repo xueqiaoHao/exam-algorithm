@@ -1,4 +1,4 @@
-package com.fdu.dp;
+package fdu.dp;
 
 import java.util.Scanner;
 
@@ -20,8 +20,8 @@ public class Dp_2014_2 {
      * 编写程序计算指定文件中字符串的距离。输入两个长度不超过512 字节的ASCII 字符串，在
      * 屏幕上输出字符串的编辑距离。
      * 输入：
-     * Hello world!
-     * Hello word!
+     * Helloworld!
+     * Helloword!
      * 输出：
      * 1
      **/

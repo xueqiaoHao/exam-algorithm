@@ -1,4 +1,4 @@
-package com.fdu.dp;
+package fdu.dp;
 
 import java.util.Scanner;
 
@@ -43,7 +43,7 @@ public class Dp_2011 {
         //做一个三维dp数组来求最长子序列
         //来存储s1与s2与s3的最长公共子序列
         String[][][] dp = new String[ln1][ln2][ln3];
-        for (int i = 0; i < ln1; i++) {
+        for (char aChars1 : chars1) {
             //如果三个元素的0位置都相等，那么dp[0][0][0]
             if (chars1[0] == chars2[0] && chars1[0] == chars3[0]) {
                 dp[0][0][0] = chars1[0] + "";
