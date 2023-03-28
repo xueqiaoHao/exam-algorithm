@@ -52,5 +52,5 @@ public class Basic_2015_1 {
         result++;
     }
 
-   
+
 }
